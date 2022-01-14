@@ -1,4 +1,4 @@
-"""This is a docstring trial."""
+"""This is a docstring."""
 
 print("Hello, to the new world.")
 
