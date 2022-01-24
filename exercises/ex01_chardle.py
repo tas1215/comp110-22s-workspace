@@ -39,6 +39,9 @@ if enter_one_character == enter_word[4]:
     num_match_character: int = num_match_character + 1
 
 if num_match_character == 1:
-    print(str(num_match_character) + " instances of " + enter_one_character + " found in " + enter_word)
+    print(str(num_match_character) + " instance of " + enter_one_character + " found in " + enter_word)
 else:
-    print("No instances of " + enter_one_character + " found in " + enter_word)
+    if num_match_character > 0:
+        print(str(num_match_character) + " instances of " + enter_one_character + " found in " + enter_word)
+    else:
+        print("No instances of " + enter_one_character + " found in " + enter_word)
