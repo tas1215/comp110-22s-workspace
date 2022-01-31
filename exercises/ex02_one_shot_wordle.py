@@ -1,6 +1,6 @@
 """One Shot Wordle."""
 
-___author___ = "730312196"
+__author__ = "730312196"
 
 # this is the secret word
 secret: str = "python"
