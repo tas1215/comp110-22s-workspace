@@ -25,12 +25,12 @@ enter_word: str = input(f"What is your {len(secret)}-letter guess? ")
 
 # loop to check if the entered guess is the correct amount of letters
 while len(enter_word) != len(secret):
-    enter_word: str = input(f"That was not {len(secret)} letters! Try again: ")
+    enter_word = input(f"That was not {len(secret)} letters! Try again: ")
 # loop for checking each indice for a match. If the indice is less than the length of the word then run through the loop. Once i  > length of secret then stop loop
 while i < len(secret):
     # add green box to result if true
     if secret[i] == enter_word[i]:
-        result: str = result + GREEN_BOX
+        result = result + GREEN_BOX
     else:
         # if the letter does not match, determine if the letter is in the word. 
         while num_alt_indi < len(secret):
