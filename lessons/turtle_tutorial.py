@@ -1,7 +1,6 @@
 """This is the set up for turtle."""
 
 from turtle import Turtle, colormode, done
-import turtle
 leo: Turtle = Turtle()
 
 leo.speed(50)
@@ -33,10 +32,6 @@ side_length: float = 300.0
 i: int = 0
 while (i < 75):
     bob.forward(side_length)
-    bob.left(123)
-    bob.forward(side_length)
-    bob.left(121)
-    bob.forward(side_length)
-    bob.left(120.5)
+    bob.left(120)
     i = i + 1
 done()
