@@ -50,3 +50,15 @@ def test_count_use1() -> None:
     """Use test 1 for count function."""
     a_list: list[str] = ["blue", "blue", "blue", "green", "green", "white"]
     assert count(a_list) == {'blue': 3, 'green': 2, 'white': 1}
+
+
+def test_count_use2() -> None:
+    """Use test 2 for count function."""
+    a_list: list[str] = ["white", "blue", "green", "blue", "blue", "green"]
+    assert count(a_list) == {'white': 1, 'blue': 3, 'green': 2}
+
+
+def test_count_edge() -> None:
+    """Edge test for count function."""
+    a_list: list[str] = []
+    assert count(a_list) == {}

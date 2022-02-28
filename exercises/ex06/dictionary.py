@@ -19,15 +19,14 @@ def favorite_color(color_dict: dict[str, str]) -> str:
     new_dictionary: dict[str, int] = {}
     for key in color_dict:
         if color_dict[key] in new_dictionary:
-            new_dictionary[key] += 1
+            new_dictionary[color_dict[key]] += 1
         else:
-            new_dictionary[key] = 1
+            new_dictionary[color_dict[key]] = 1
     i: int = 0
     for key in new_dictionary:
         if new_dictionary[key] > i:
-            i += 1
-        else:
-            most_pop_color = color_dict[key]
+            i = new_dictionary[key]
+            most_pop_color = key
     return most_pop_color
 
 
@@ -40,4 +39,5 @@ def count(a_list: list[str]) -> dict[str, int]:
             counting_dict[a_list[i]] += 1
         else:
             counting_dict[a_list[i]] = 1
+        i += 1
     return counting_dict
