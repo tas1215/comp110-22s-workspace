@@ -29,3 +29,15 @@ def favorite_color(color_dict: dict[str, str]) -> str:
         else:
             most_pop_color = color_dict[key]
     return most_pop_color
+
+
+def count(a_list: list[str]) -> dict[str, int]:
+    """Creates a dict that counts the number of times a key is found in the given list."""
+    counting_dict: dict[str, int] = {}
+    i: int = 0
+    while i < len(a_list):
+        if a_list[i] in counting_dict:
+            counting_dict[a_list[i]] += 1
+        else:
+            counting_dict[a_list[i]] = 1
+    return counting_dict
